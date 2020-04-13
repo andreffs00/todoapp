@@ -3,7 +3,13 @@ body {
 }
 
 input {
-  background-color: lightgrey;
+  width: 7%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 button {
     padding: 15px 25px;
@@ -21,10 +27,6 @@ button {
     transform: translateY(4px);
   }
 
-  lista {
-      font-size: 50;
-      font-family: 'PT Sans', sans-serif;
-  }
 
 
 
