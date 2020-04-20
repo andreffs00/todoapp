@@ -1,25 +1,29 @@
 body {
     font-family: 'PT Sans', sans-serif;
+    background-color: #ffcc80;
 }
 
 input {
-  width: 7%;
+  width: 20%;
   padding: 20px 20px;
   margin: 8px 0;
+  margin-left: 37.5%;
   display: inline-block;
-  border: 3px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-align: left;
   box-sizing: border-box;
 }
+
 button {
-    padding: 15px 25px;
+  margin-left: 60,2%;
+    padding: 13px 25px;
     font-size: 24px;
     cursor: pointer;
     text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #F5F5F5;
   }
   
   
@@ -28,7 +32,380 @@ button {
   }
 
 
+h1 {
+font-size: 90px;
+text-align: center;
+font-weight: lighter;
+}
+
+h1 span {
+font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -2%;
+}
 
 
 
+.caixa {
+  margin-left: 36.5%;
+  border-radius: 10px;
+  height: 490px;
+  width: 600px;
+  padding: 50px;
+  border: 2px solid #000000;
+  background-color: #F5F5F5;
+}
+
+.clock {
+  height: 200px;
+  width: 200px;
+  background-color: #F5F5F5;
+  border-radius: 100%;
+  border: 3px solid #000000;
+  margin: auto;
+  position: absolute;
+  top: -55%;
+  left: 52%;
+  bottom: 0;
+  right: 0;
+}
+.twelve {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: #111111;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.three {
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background: #111111;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+
+.six {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: #111111;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.nine {
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background: #111111;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background: #000;
+  border-radius: 100%;
+}
+
+#seconds {
+  position: absolute;
+  height: 80px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+  background: #ff4136;
+}
+
+#minutes {
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  left: 0;
+  right: 0;
+  bottom: 51%;
+  top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
+
+#lista {
+font-size: 20px;
+text-align: left;
+text-decoration: none;
+}
+
+#hours {
+  position: absolute;
+  height: 50px;
+  width: 6px;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  top: 0px;
+  margin: auto;
+  background: #000;
+  -webkit-transform-origin: bottom;
+}
+
+p span1 {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type:none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul a {
+  text-decoration: none;
+  color: red;
+}
+
+/* Homepage */
+
+.retangulo {
+  height: 600px;
+  width: 100%;
+  margin-top: 7%;
+  background-color: #F5F5F5;
+  border: 2px solid #000000;
+  border-radius: 10px;
+
+}
+
+h3 {
+  margin-top: 1%;
+  font-size: 110px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3 span {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -4%;
+}
+
+.primeiro {
+  margin-left: 40%;
+  margin-top: 3%;
+  background-color: white;
+  height: 50px;
+  width: 500px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.segundo {
+  margin-left: 40%;
+  margin-top: 2.4%;
+  background-color: white;
+  height: 50px;
+  width: 500px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.terceiro {
+  margin-left: 40%;
+  margin-top: 2.0%;
+  background-color: white;
+  height: 50px;
+  width: 500px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+htexto {
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+
+}
+
+button1 {
+    margin-left: 92%;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    
+  }
+  
+  
+  button:active {
+    transform: translateY(4px);
+  }
+
+
+  .imagem {
+    margin-top: -20%;
+    margin-left: 14%;
+  }
+
+  .imagem img {
+    width: 100px;
+    height: 100px;
+    transform: rotate(20deg);
+  }
+
+  .imagem1 {
+    margin-top: -10%;
+    margin-left: 3%;
+  }
+
+  .imagem1 img {
+    width: 130px;
+    height: 130px;
+    transform: rotate(-30deg);
+  }
+
+  .imagem2 {
+    margin-top: -8%;
+    margin-left: 22%;
+  }
+
+  .imagem2 img {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-30deg);
+  }
+
+  .imagem3 {
+    margin-top: -10%;
+    margin-left: 70%;
+  }
+
+  .imagem3 img {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-30deg);
+  }
+
+  .imagem4 {
+    margin-top: 4%;
+    margin-left: 90%;
+  }
+
+  .imagem4 img {
+    width: 110px;
+    height: 110px;
+    transform: rotate(30deg);
+  }
+
+  .retanguloesquerdo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+  }
+  .retangulodireito {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+  }
+
+  .footer {
+    position: absolute;
+    top: 87.5%;
+    left: 18%;
+    height: 100px;
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  textofooter {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+  }
+
+  textofooter span {
+    font-weight: bold;
+  }
+
+  .definition {
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    height: 150px;
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  informaçao {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+    display: flex;
+  }
+
+  .thankyou {
+    position: absolute;
+    top: 87.5%;
+    left: 70.5%;
+    height: 100px;
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  thankyoutext {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 35px;
+    padding-left: 25px;
+    display: flex;
+  }
 

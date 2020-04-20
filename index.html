@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>To Do App</title>
+</head>
+<body>
+    <h1><span>ToDo</span>App</h1>
+    <h2>"Your tasks, our management"</h2>
+    <br>
+    <br>
+    <br>
+
+    <input placeholder="Insert your tasks"> 
+    <button>Add</button>
+
+    <div class="definition">
+      <informaçao>With this app, you can list all your to do's, that way you wo´nt miss any appointment</informaçao>
+    </div>
+
+    <div class="footer">
+      <textofooter><span>Made By: </span>&nbsp André Santos</textofooter>
+      <br>
+      <textofooter><span>Email:  </span>&nbsp andre_franco7000@hotmail.com</textofooter>
+    </div>
+
+    <div class="thankyou">
+      <thankyoutext>Thank you for using the app :)</thankyoutext>
+    </div>
+
+    
+<div class="retanguloesquerdo">
+
+</div>
+
+<div class="retangulodireito">
+  
+</div>
+
+    <div class = "caixa">
+    <div id="lista">
+        <ul>
+
+        </ul>
+
+    </div>
+
+
+        
+    </div>
+
+        <div class="clock">
+          <div id="hours"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+          <div class="three"></div>
+          <div class="six"></div>
+          <div class="nine"></div>
+          <div class="twelve"></div>
+          <div class="center"></div>
+        </div>
+    
+
+    <script>
+    var lista = document.querySelector("ul");
+    var button = document.querySelector("button");
+    var input = document.querySelector("input");
+
+    function moveHands() {
+  with (new Date()) {
+    h = 30 * ((getHours() % 12) + getMinutes() / 60); // 30 degrees hour
+    m = 6 * getMinutes(); // 6 degrees every minute
+    s = 6 * getSeconds(); // 6 degrees every second
+    // setting the rotate CSS attribute to those degree values -->
+    document.getElementById("seconds").style.cssText =
+      "-webkit-transform:rotate(" + s + "deg);";
+    document.getElementById("minutes").style.cssText =
+      "-webkit-transform:rotate(" + m + "deg);";
+    document.getElementById("hours").style.cssText =
+      "-webkit-transform:rotate(" + h + "deg);";
+
+    setTimeout(moveHands, 1000); // calling the function every second
+  }
+}
+
+window.onload = moveHands; // making sure the function starts on load of webpage
+
+
+
+    var items = [
+        "Create a list"
+            ]
+
+            function mostrarItems() {
+                lista.innerHTML = "";
+                for(item of items) {
+                    var itemLi = document.createElement("li");
+                    var itemTexto = document.createTextNode(item);
+                    itemLi.appendChild(itemTexto);
+                    lista.appendChild(itemLi);
+
+                    var removerElemento = document.createElement("a");
+                    removerElemento.setAttribute("href", "#");
+                    var removerTexto = document.createTextNode(" remove");
+                    itemLi.appendChild(removerElemento);
+                    removerElemento.appendChild(removerTexto);
+
+                    var itemPosicao = items.indexOf(item);
+                    removerElemento.setAttribute("onclick", "removerItem(" + itemPosicao + ")");
+                }
+            }
+
+            mostrarItems();
+
+            function adicionarItem(){
+                var itemTexto = input.value;
+                items.push(itemTexto);
+                mostrarItems(); 
+                input.value = "";
+            }
+
+            
+
+            button.onclick = adicionarItem;
+
+            function removerItem(itemPosicao){
+                items.splice(itemPosicao, 1);
+                mostrarItems();
+
+            }
+            
+            
+    </script>
+    
+</body>
+</html>
